@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import Account from "components/Account/Account";
 import Chains from "components/Chains";
-import TokenPrice from "components/TokenPrice";
+// import TokenPrice from "components/TokenPrice";
 import ERC20Balance from "components/ERC20Balance";
 import ERC20Transfers from "components/ERC20Transfers";
 import DEX from "components/DEX";
@@ -74,12 +74,12 @@ const App = ({ isServerInfo }) => {
           <MenuItems />
           <div style={styles.headerRight}>
             <Chains />
-            <TokenPrice
+            {/* <TokenPrice
               address="0x1f9840a85d5af5bf1d1762f925bdaddc4201f984"
               chain="eth"
               image="https://cloudflare-ipfs.com/ipfs/QmXttGpZrECX5qCyXbBQiqgQNytVGeZW5Anewvh2jc4psg/"
               size="40px"
-            />
+            /> */}
             <NativeBalance />
             <Account />
           </div>
@@ -135,19 +135,19 @@ const App = ({ isServerInfo }) => {
       </Router>
       <Footer style={{ textAlign: "center" }}>
         <Text style={{ display: "block" }}>
-          ⭐️ Please star this{" "}
+          Visit our official website{" "}
           <a
-            href="https://github.com/ethereum-boilerplate/ethereum-boilerplate/"
+            href="https://keafarm.io/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            boilerplate
+            Keafarm
           </a>
-          , every star makes us very happy!
+          , and find out what's happening!
         </Text>
 
-        <Text style={{ display: "block" }}>
-          🙋 You have questions? Ask them on the {""}
+        {/* <Text style={{ display: "block" }}>
+          🙋 Join our discord {""}
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -155,17 +155,17 @@ const App = ({ isServerInfo }) => {
           >
             Moralis forum
           </a>
-        </Text>
+        </Text> */}
 
         <Text style={{ display: "block" }}>
-          📖 Read more about{" "}
-          <a
+          By Keafarm Official 2022
+          {/* <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://moralis.io?utm_source=boilerplatehosted&utm_medium=todo&utm_campaign=ethereum-boilerplat"
           >
             Moralis
-          </a>
+          </a> */}
         </Text>
       </Footer>
     </Layout>
