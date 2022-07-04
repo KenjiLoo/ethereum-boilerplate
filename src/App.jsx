@@ -57,7 +57,7 @@ const styles = {
     fontWeight: "600",
   },
   logo: {
-    width: 50,
+    width: 60,
     height: 45,
   },
 };
@@ -128,7 +128,7 @@ const App = ({ isServerInfo }) => {
               <Contract />
             </Route>
             <Route path="/">
-              <Redirect to="/onramp" />
+              <Redirect to="/1inch" />
             </Route>
             <Route path="/ethereum-boilerplate">
               <Redirect to="/quickstart" />
