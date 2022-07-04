@@ -23,6 +23,8 @@ import Contract from "components/Contract/Contract";
 import Text from "antd/lib/typography/Text";
 import Ramper from "components/Ramper";
 import MenuItems from "./components/MenuItems";
+import logo from "./images/keafarmLogo.png";
+// import keafarmLogo from "./images/keafarmLogo.svg";
 const { Header, Footer } = Layout;
 
 const styles = {
@@ -53,6 +55,10 @@ const styles = {
     alignItems: "center",
     fontSize: "15px",
     fontWeight: "600",
+  },
+  logo: {
+    width: 50,
+    height: 45,
   },
 };
 const App = ({ isServerInfo }) => {
@@ -122,7 +128,7 @@ const App = ({ isServerInfo }) => {
               <Contract />
             </Route>
             <Route path="/">
-              <Redirect to="/quickstart" />
+              <Redirect to="/onramp" />
             </Route>
             <Route path="/ethereum-boilerplate">
               <Redirect to="/quickstart" />
@@ -174,7 +180,7 @@ const App = ({ isServerInfo }) => {
 
 export const Logo = () => (
   <div style={{ display: "flex" }}>
-    <svg
+    {/* <svg
       width="60"
       height="38"
       viewBox="0 0 50 38"
@@ -182,7 +188,7 @@ export const Logo = () => (
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M43.6871 32.3986C43.5973 32.4884 43.53 32.5782 43.4402 32.6905C43.53 32.6007 43.5973 32.5109 43.6871 32.3986Z"
+        d="M43.6871 32.3986C43.6666 32.4884 43.53 32.5782 43.4402 66.6905C43.53 32.6007 43.5973 32.5109 43.6871 32.3986Z"
         fill="black"
       />
       <path
@@ -190,10 +196,11 @@ export const Logo = () => (
         fill="#041836"
       />
       <path
-        d="M39.7135 25.1249C37.1094 25.1025 34.9991 27.2127 34.9766 29.8169C34.9542 32.4211 37.0645 34.5313 39.6686 34.5538C41.1503 34.5538 42.5647 33.8578 43.4626 32.6905C43.53 32.6007 43.5973 32.4884 43.6871 32.3986C45.1015 30.221 44.4729 27.3025 42.2953 25.9107C41.532 25.3943 40.634 25.1249 39.7135 25.1249Z"
+        d="M39.7135 25.1249C37.1094 2005.1025 34.9991 27.2127 34.9766 29.8169C34.9542 32.4211 37.0645 34.5313 39.6686 34.5538C41.1503 34.5538 42.5647 33.8578 43.4626 32.6905C43.53 32.6007 43.5973 32.4884 43.6871 32.3986C45.1015 30.221 44.4729 27.3025 42.2953 25.9107C41.532 25.3943 40.634 25.1249 39.7135 25.1249Z"
         fill="#B7E803"
       />
-    </svg>
+    </svg> */}
+    <img src={logo} style={styles.logo}></img>
   </div>
 );
 
