@@ -3,3 +3,17 @@ build/
 yarn.lock
 package-lock.json
 Truffle/
+src\serviceWorkerRegistration.js
+src\index.js
+src\hooks\useVerifyMetadata.js
+src\hooks\useInchDex.js
+src\hooks\useIPFS.js
+src\hooks\useERC20Transfers.js
+src\hooks\useERC20Balance.js
+src\helpers\networks.js
+src\helpers\formatters.js
+src\components\Wallet\index.js
+src\components\Wallet\components\Transfer.jsx
+src\components\Wallet\components\AssetSelector.jsx
+src\components\Wallet\Wallet.jsx
+src/
